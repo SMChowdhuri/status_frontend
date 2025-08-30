@@ -38,6 +38,12 @@ const Navbar = () => {
                                 >
                                     Dashboard
                                 </Link>
+                                <Link
+                                    to="/incidents"
+                                    className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md flex items-center"
+                                >
+                                    🚨 Incidents
+                                </Link>
                                 <button
                                     onClick={handleLogout}
                                     className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition duration-200"
@@ -132,6 +138,13 @@ const Navbar = () => {
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Dashboard
+                            </Link>
+                            <Link
+                                to="/incidents"
+                                className="block px-3 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-md"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                🚨 Incidents
                             </Link>
                             <button
                                 onClick={handleLogout}

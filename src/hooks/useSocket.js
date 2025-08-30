@@ -5,9 +5,11 @@ export const useSocket = () => {
   const socketRef = useRef(socket);
 
   useEffect(() => {
+    const currentSocket = socketRef.current;
+    
     return () => {
-      if (socketRef.current) {
-        socketRef.current.removeAllListeners();
+      if (currentSocket) {
+        currentSocket.removeAllListeners();
       }
     };
   }, []);

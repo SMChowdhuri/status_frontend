@@ -18,8 +18,6 @@ const Login = () => {
         //     toast.error('Please use admin login for admin accounts');
         //     return;
         // }
-        // calcLength/
-        console.log(email,password)
 
         setLoading(true);
 

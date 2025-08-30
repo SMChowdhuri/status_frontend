@@ -33,7 +33,7 @@ const AdminRegister = () => {
         setLoading(true);
 
         try {
-            const response = await registerAdmin({ email, password });
+            await registerAdmin({ email, password });
             toast.success('Admin registered successfully!');
             navigate('/admin/login');
         } catch (error) {

@@ -38,5 +38,24 @@ export const getServices = () => api.get('/services');
 export const createService = (serviceData) => api.post('/services', serviceData);
 export const updateService = (id, serviceData) => api.put(`/services/${id}`, serviceData);
 export const deleteService = (id) => api.delete(`/services/${id}`);
+export const getServiceStatus = (id) => api.get(`/services/${id}/status`);
+export const getServiceLogs = (id) => api.get(`/services/${id}/logs`);
+
+// Incident Management APIs
+export const getAllIncidents = () => api.get('/incidents');
+export const createIncident = (incidentData) => api.post('/incidents', incidentData);
+export const getIncident = (id) => api.get(`/incidents/${id}`);
+export const updateIncident = (id, incidentData) => api.put(`/incidents/${id}`, incidentData);
+export const deleteIncident = (id) => api.delete(`/incidents/${id}`);
+export const resolveIncident = (id) => api.patch(`/incidents/${id}/resolve`);
+
+// AI Features APIs
+export const generateIncidentSummary = (id) => api.post(`/incidents/${id}/generate-summary`);
+export const getServiceHealthSummary = (serviceId, days = 7) => api.get(`/incidents/service/${serviceId}/health-summary?days=${days}`);
+export const autoDetectIncidents = (serviceId, thresholdMinutes = 5) => api.post(`/incidents/service/${serviceId}/auto-detect?thresholdMinutes=${thresholdMinutes}`);
+
+// Enhanced Analytics APIs
+export const getServiceAnalytics = (serviceId, days = 30) => api.get(`/services/${serviceId}/analytics?days=${days}`);
+export const getServiceIncidents = (serviceId) => api.get(`/services/${serviceId}/incidents`);
 
 export default api;
