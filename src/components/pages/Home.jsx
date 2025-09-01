@@ -23,7 +23,7 @@ const Home = () => {
       <div className="text-center py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Status Page<span className="text-blue-600">.</span>
+            StatusGuard AI<span className="text-blue-600">.</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
             Professional service monitoring and incident management platform with AI-powered insights
@@ -200,7 +200,7 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <h3 className="text-2xl font-bold text-white mb-4">Status Page</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">StatusGuard AI</h3>
               <p className="text-gray-400 mb-4">
                 Professional service monitoring and incident management platform designed for modern teams.
               </p>
@@ -229,7 +229,7 @@ const Home = () => {
                 <li>Real-time Monitoring</li>
                 <li>AI-Powered Insights</li>
                 <li>Incident Management</li>
-                <li>Status Pages</li>
+                <li>StatusGuard AI</li>
                 <li>Analytics & Reports</li>
               </ul>
             </div>
@@ -248,7 +248,7 @@ const Home = () => {
           
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
             <p className="text-gray-400">
-              © 2025 Status Page. All rights reserved.
+              © 2025 StatusGuard AI. All rights reserved.
             </p>
           </div>
         </div>

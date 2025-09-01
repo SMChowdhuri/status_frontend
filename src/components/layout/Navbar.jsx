@@ -20,7 +20,7 @@ const Navbar = () => {
                     <div className="flex items-center">
                         <Link to="/" className="flex-shrink-0">
                             <span className="text-2xl font-bold text-gray-800">
-                                Status Page
+                                StatusGuard AI
                             </span>
                         </Link>
                     </div>
